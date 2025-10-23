@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ===== Header Container ===== */
+.container-header {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 16px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+}
+
+/* ===== Logo ===== */
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* ===== Navbar ===== */
+.content-navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item {
+    font-size: 15px;
+    font-weight: 500;
+    color: #23439C;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    transition: color 0.2s ease;
+}
+
+.menu-item:hover {
+    color: #1a2d72;
+}
+
+/* ===== Contact Button ===== */
+.header-contact-b {
+    background-color: #23439C;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.header-contact-b:hover {
+    background-color: #1a2d72;
+}
+
+/* ===== Hamburger Icon ===== */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: #23439C;
+    cursor: pointer;
+}
+
+/* ===== Responsive Design ===== */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .content-navbar {
+        gap: 20px;
+    }
+
+    .header-contact-b {
+        font-size: 14px;
+        padding: 8px 18px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .content-navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        padding: 15px 0;
+        border-top: 1px solid #ddd;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        animation: slideDown 0.3s ease forwards;
+    }
+
+    .content-navbar.active {
+        display: flex;
+    }
+
+    .menu-item {
+        width: 100%;
+        padding: 10px 20px;
+        color: #23439C;
+    }
+
+    .header-contact-b {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .logo img {
+        width: 140px;
+    }
+
+    .menu-item {
+        font-size: 14px;
+    }
+
+    .header-contact-b {
+        width: 100%;
+    }
+}
+
+/* ===== Smooth Dropdown Animation ===== */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

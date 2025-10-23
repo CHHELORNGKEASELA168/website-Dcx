@@ -1,0 +1,127 @@
+/* About.css */
+.about-content {
+  padding: 2rem 1rem;
+  margin-top: 14rem;
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-img {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.content-img img {
+  width: 100%;
+  height: auto;
+  max-width: 212px;
+  border-radius: 8px;
+}
+
+.content-title {
+  width: 100%;
+}
+
+.content-title-home {
+  text-align: center;
+}
+
+.content-title-home h1 {
+  color: #203263;
+  font-weight: 700;
+  font-size: 2.5rem;
+  font-family: 'Outfit', sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.content-title-About1,
+.content-title-About2 {
+  color: #586569;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+/* Tablet styles */
+@media (min-width: 768px) {
+  .about-content {
+    padding: 3rem 2rem;
+  }
+  
+  .content-section {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4rem;
+  }
+  
+  .content-img {
+    flex: 0 0 auto;
+    max-width: 250px;
+  }
+  
+  .content-title {
+    flex: 1;
+  }
+  
+  .content-title-home {
+    text-align: left;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 1024px) {
+  .about-content {
+    padding: 4rem 2rem;
+  }
+  
+  .content-section {
+    gap: 5rem;
+  }
+  
+  .content-img {
+    max-width: 300px;
+  }
+  
+  .content-title-home h1 {
+    font-size: 3rem;
+  }
+  
+  .content-title-About1,
+  .content-title-About2 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Large desktop styles */
+@media (min-width: 1280px) {
+  .content-img {
+    max-width: 350px;
+  }
+  
+  .content-title-home h1 {
+    font-size: 3.5rem;
+  }
+}
+
+/* Mobile small screens */
+@media (max-width: 480px) {
+  .content-title-home h1 {
+    font-size: 2rem;
+  }
+  
+  .content-title-About1,
+  .content-title-About2 {
+    font-size: 1rem;
+  }
+}
