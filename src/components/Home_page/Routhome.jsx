@@ -1,7 +1,7 @@
 // import React from 'react';
 
 import About from "./About";
-import ContactSection from "./Contact";;
+import ContactSection from "./Contact";
 import Expertise from "./Expertise";
 import Herohome from "./Herohome";
 import MekongSwiper from "./MekongSwiper";
